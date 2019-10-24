@@ -1,0 +1,8 @@
+image-registry-pv.yaml 
+
+This is a template can be used as a point of reference, to create a persistent volume that points to an NFS share. Used to create an appropiate PV for the image-registry. Requires modification on a per cluster basis. This assumes that a NFS share has been created and the image registry has created a PVC to bind to. 
+
+
+See deployment guide for more details. 
+
+

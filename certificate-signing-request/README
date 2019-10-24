@@ -1,0 +1,4 @@
+approve-csr.sh 
+
+When run this script lists csr's and approves any that are still pending. 
+Should be run during deployment, when adding nodes to the cluster, and 24hours after deployment when more may be generated. Also at any point when more nodes are added to the cluster. 

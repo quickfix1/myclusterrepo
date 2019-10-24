@@ -1,0 +1,53 @@
+eo-namespace.yaml
+
+Creates a Namespace for the ElasticSearch Operator. 
+
+
+clo-namespace.yaml 
+
+Creates a Namespace for the Cluster Logging Operator. 
+
+
+eo-og.yaml 
+
+Creates an Operator Group for the ElasticSearch Operator. 
+
+
+eo-csc.yaml
+
+Creates a CatalogSource to enable the ElasticSearch Operator. 
+
+
+get-channel.sh
+
+Script when run gets the channel value required for creating the subscription object. 
+
+
+eo-sub.yaml 
+
+Can be used as reference to create a subscription object. Requires the channel value modifed. 
+
+
+eo-rbac.yaml 
+
+Creates RBAC to grant Prometheus permission to access openshift-operators-redhat namespace.
+
+
+cluster-logging.yaml
+
+Reference for updating the custom resource definition for Cluster Logging. Modification to storage and resource paramaters to be changed on a per cluster basis. 
+
+
+default-fluentd-ds.yaml 
+
+Reference of the original fluentd daemon set before modification. 
+
+
+fluentd-ds.yaml
+
+Reference for updating the fluendt daemon set for logging application and system logs to an external ElasticSearch instance. 
+
+
+For further details regarding OpenShift Logging (EFK) please see the deployment guide. 
+
+

@@ -1,0 +1,12 @@
+ldap-cr.yaml 
+
+Reference for creating the Custom Resource Definition for the LDAP Identity Provider. LDAP attributes, bindDN, bindPassword, ca and url will change depending on the Identity Manager being used.
+
+config.yaml 
+
+Reference for creating the Sync Configuration File for LDAP Groups. bindDn, bindPassword, ca, group and user queries will need changed as appropiate. 
+
+
+For further information see the deployment guide. 
+
+

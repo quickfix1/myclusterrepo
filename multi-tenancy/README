@@ -1,0 +1,12 @@
+templateCopy.yaml
+
+Reference for the network policy changes required in the project template to introduce multi-tenancy so that pods within the same project can communicate. 
+
+
+multi_tenancy.sh 
+
+When script is run will create the project template (project-request) and patch project.config.openshift.io/cluster resource to point to it. 
+
+
+For further details please see deployment guide. 
+

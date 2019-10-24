@@ -1,0 +1,34 @@
+/ocp4/install-config.yaml
+
+Reference install configuration. Needs modified on a per cluser basis. Advisable to make a backup after modification as it is automatically delete when the ignition files are made. 
+
+
+/openshift4/config_bootstrap.txt 
+
+Reference file containing environment variables. Needs modified on a per cluster basis. Used by the config_bootstrap.sh script. 
+
+
+/openshift4/config_bootstrap.sh 
+
+Script when run creates individual ignition files for the bootstrap, masters and workers based on the paramters in the install-config.yaml and config_bootstrap.txt 
+
+
+/openshift4/dns.txt
+
+Reference for the DNS entries required, formatted for OpenDNS, should be modified and setup by network team. 
+
+
+/openshift4/dhcpd.conf 
+
+Reference for the DHCP server configuration. Requires modification on a per cluster basis.
+
+
+For further details please see the deployment guide. 
+
+
+
+
+
+
+
+

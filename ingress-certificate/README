@@ -1,0 +1,11 @@
+uktpicl100ocp01.conf
+
+Reference for creating a SAN CSR Certificate. 
+
+
+openshift-kube-apiserver-operator-cm-localhost-serving-ca.yaml
+
+Reference for the default localhost-serving-ca before modification. 
+
+
+For further details please see deployment guide. 

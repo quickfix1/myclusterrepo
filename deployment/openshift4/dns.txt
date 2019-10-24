@@ -1,0 +1,24 @@
+DNS Record 
+
+Cluster name			uktpicl100ocp31 
+
+*.apps.uktpicl100ocp31	A	10.68.69.195
+api.uktpicl100ocp31	A	10.68.69.196
+api-int.uktpicl100ocp31	A	10.68.69.196
+etcd-0.uktpicl100ocp31	A	10.68.69.133
+etcd-1.uktpicl100ocp31	A	10.68.69.134
+etcd-2.uktpicl100ocp31	A	10.68.69.135
+
+_etcd-server-ssl._tcp.uktpicl100ocp31	SRV	0 10 2380 etcd-0.uktpicl100ocp31
+						0 10 2380 etcd-1.uktpicl100ocp31
+						0 10 2380 etcd-2.uktpicl100ocp31
+
+uktpims100ocs31		A	10.68.69.132
+uktpims100ocm31		A	10.68.69.133
+uktpims100ocm32		A	10.68.69.134
+uktpims100ocm33		A	10.68.69.135
+uktpims100ocw31		A	10.68.69.137
+uktpims100ocw32		A	10.68.69.138
+uktpims100ocw33		A	10.68.69.139
+uktpims100ocw34		A	10.68.69.140
+

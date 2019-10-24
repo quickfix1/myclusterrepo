@@ -1,0 +1,31 @@
+kind: LDAPSyncConfig
+apiVersion: v1 
+url: ldaps://uktmimsidm1.emea.vcstest.local:636
+insecure: false
+bindDN: uid=srv.openshift_idm,cn=users,cn=accounts,dc=emea,dc=vcstest,dc=local
+bindPassword:
+  file: bindPassword.encrypted
+  keyFile: bindPassword.key
+ca: ca.crt
+rfc2307:
+    groupsQuery:
+        baseDN: "cn=groups,cn=compat,dc=emea,dc=vcstest,dc=local"
+        scope: sub
+        timeout: 0 
+        derefAliases: always
+        filter: (objectClass=*)
+        pageSize: 0 
+    groupUIDAttribute: dn
+    groupNameAttributes: [ cn ]
+    groupMembershipAttributes: [ memberUid ]
+    usersQuery: 
+        baseDN: "cn=users,cn=accounts,dc=emea,dc=vcstest,dc=local"
+        scope: sub
+        timeout: 0 
+        derefAliases: always
+        filter: (objectClass=*)
+        pageSize: 0 
+    userUIDAttribute: uid
+    userNameAttributes: [ uid ]
+    tolerateMemberNotFoundErrors: true
+    tolerateMemberOutOfScopeErrors: true  

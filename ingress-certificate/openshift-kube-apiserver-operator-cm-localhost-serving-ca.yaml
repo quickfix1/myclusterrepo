@@ -1,0 +1,30 @@
+apiVersion: v1
+data:
+  ca-bundle.crt: |
+    -----BEGIN CERTIFICATE-----
+    MIIDQDCCAiigAwIBAgIIJGG7VhR2uH8wDQYJKoZIhvcNAQELBQAwPjESMBAGA1UE
+    CxMJb3BlbnNoaWZ0MSgwJgYDVQQDEx9rdWJlLWFwaXNlcnZlci1sb2NhbGhvc3Qt
+    c2lnbmVyMB4XDTE5MDgxMjA3MjY1MFoXDTI5MDgwOTA3MjY1MFowPjESMBAGA1UE
+    CxMJb3BlbnNoaWZ0MSgwJgYDVQQDEx9rdWJlLWFwaXNlcnZlci1sb2NhbGhvc3Qt
+    c2lnbmVyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvNTLLT4e3hm5
+    JdKUfxpwSsozf+mwSr6tpDp1378ZAPqujxcmU50Qr4bHb9bH70u3cnMEhKbpSbuC
+    E3xPvfeyxMSzCdz9XdPISQFxLBl18jvfAfusQzld5uESJDaBEFh/vAG2mmwqegwJ
+    aJd32T1JStCQUlkYLHlk9knsZYmdHxh55C/a+fMZfIr2IuaosFhVked3i6k4pYCu
+    HSdhpjYVplCjSf+5WSwK1VJT7nYpxfFX42rZQsScy1PgFxtm/Z44G/39gVrxYN4u
+    QRuXTxvC/ABIUNdzvE9fDV/kOqF4NEUnblIuaYx5E5mEFa4FIraqEs9CO7OUSLwW
+    klSsnXSD/wIDAQABo0IwQDAOBgNVHQ8BAf8EBAMCAqQwDwYDVR0TAQH/BAUwAwEB
+    /zAdBgNVHQ4EFgQU/Tsd8fJDYYVFkiuEuDYSTfBOwp0wDQYJKoZIhvcNAQELBQAD
+    ggEBADL0EpMwdcwaSnHomKC/IePAP3M3tCnZYWUOmacATlTuWsfdewKwGWX2WSE/
+    lY+7KZiN8b7Uo9i3I0gLFuuCNTpBZesFbxNd3jkHudWlTdjLId39CiegejY8dVAh
+    IxKqHCW/za/vUUg5cmXyIewUGAuIb90I6+K0W02vUqeTHuFxGumyzbyfNCLDY1sK
+    t+axj8XxArXHeXYz96dEXaWoeCqFDkgm7q9BeyixCWDgbOfvMqnHCanZHHl7y1TR
+    OKHtH99ua0bqrHi8a7lesWap1ogEOmF8N2t/cIuwl3BRTsUGbmy7kSAwaBDUatLd
+    3uc0uV8UQLHtzXiwfl4v0IVzY/s=
+    -----END CERTIFICATE-----
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  labels:
+    auth.openshift.io/managed-certificate-type: ca-bundle
+  name: localhost-serving-ca
+  selfLink: /api/v1/namespaces/openshift-kube-apiserver-operator/configmaps/localhost-serving-ca

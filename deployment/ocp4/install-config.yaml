@@ -1,0 +1,33 @@
+apiVersion: v1
+baseDomain: emea.vcstest.local
+compute:
+- hyperthreading: Enabled
+  name: worker
+  platform: {}
+  replicas: 0
+controlPlane:
+  hyperthreading: Enabled
+  name: master
+  platform: {}
+  replicas: 3
+metadata:
+  creationTimestamp: null
+  name: uktpicl100ocp31
+networking:
+  clusterNetwork:
+  - cidr: 192.0.0.0/14
+    hostPrefix: 23
+  machineCIDR: 10.0.0.0/16
+  networkType: OpenShiftSDN
+  serviceNetwork:
+  - 192.168.0.0/16
+platform:
+  vsphere:
+    vcenter: uktmcmsvc2.emea.vcstest.local
+    username: user.name@emea.vcstest.local
+    password: <password>
+    datacenter: UKT
+    defaultDatastore: DSN-INT-03
+pullSecret: '{"auths":...'
+sshKey: |
+ ssh-rsa AAAAB... user.name@uktpims100ocb31.emea.vcstest.local
